@@ -31,7 +31,7 @@ function Draw(json_str, group)
         length = group == 1 ? data[i].lessons1.length : data[i].lessons2.length;
         for(a=0; a < length; a++)
         {
-            element.querySelector(".list-group").innerHTML +=  `<li class="list-group-item">${a}. ${group == 1 ? data[i].lessons1[a] : data[i].lessons2[a]}</li>`;
+            element.querySelector(".list-group").innerHTML +=  `<li class="list-group-item">${a+1}. ${group == 1 ? data[i].lessons1[a] : data[i].lessons2[a]}</li>`;
         }
         list.appendChild(element);
     }
